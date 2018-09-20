@@ -1,0 +1,42 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+nav{
+  background-color: #00008B;
+}
+.navbar-brand{
+  font-family: 'Press Start 2P', cursive;
+}
+nav #navbar-links li {
+  margin-right: 1rem;
+  color:white;
+}
+nav #navbar-links li button{
+  margin-right: 1rem;
+  color:white;
+}
+.index h1{
+  font-family: 'Press Start 2P', cursive;
+  color: #00008B;
+}
+.index{
+  min-height: 80vh;
+}
+.index img{
+  height:80vh;
+}
+.nav2 #navbar-links li:hover{
+  color:#fdd835;
+  cursor:pointer;
+}
+.posts{
+}
+.posts form .btn{
+  background-color: #00008B;
+  color:white;
+}

@@ -13,7 +13,7 @@ class Teacher(models.Model):
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
-    class_enrolled = models.CharField(max_length=256, default="NE") #NE=NotEnrolled
+    class_enrolled = models.CharField(max_length=256, default="DONT USE THIS") #NE=NotEnrolled
     qs_assigned = models.CharField(max_length=256, default="NA") #NA=NotAssigned
     ans_submited = models.CharField(max_length=256, default="NS") #NS=NoneSubmited
     total_score = models.FloatField(default=0.00)
@@ -46,8 +46,6 @@ class CodeClass(models.Model):
     class_name = models.CharField(max_length=255)
     teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE, null=True, blank=True)
     student = models.ManyToManyField(Student, blank=True)
-    # enrolled_students = models.CharField(max_length=512, blank=True, null=True)
-     # Store a json list of student ids 
     qs_list = models.CharField(max_length=512, blank=True, null=True) #Store a json list of qs/assignment ids
 
 

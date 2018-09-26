@@ -1,4 +1,5 @@
-
+{% extends 'eclass/base.html' %}
+{% block nav %}
   <nav class="navbar navbar-inverse navbar-expand-lg navbar-dark nav2">
      <a class="navbar-brand" href="#">
         codeClass
@@ -12,10 +13,10 @@
            <a><span class="font-weight-bold m-1" style="font-size:1rem">Home</span></a>
          </li>
          <li class="nav-item">
-           <a><span class="font-weight-bold m-1" style="font-size:1rem">Todo</span></a>
+           <a><span class="font-weight-bold m-1" style="font-size:1rem">View Class</span></a>
          </li>
          <li class="nav-item">
-           <a><span class="font-weight-bold m-1" style="font-size:1rem">Progress</span></a>
+           <a><span class="font-weight-bold m-1" style="font-size:1rem">Student Progress</span></a>
          </li>
          <li class="nav-item">
            <button type="button" class="btn btn-sm btn-warning">Logout</button>
@@ -23,3 +24,4 @@
        </ul>
      </div>
    </nav>
+{% endblock %}
